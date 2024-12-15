@@ -9,17 +9,23 @@
 {% endblock  %}
 
     {% block content %}
-    <div class="mt-5 pt-5 bg-white custom-shadow rounded">
-        <h2 class="m-2"><strong>{{ content }}</strong></h2>
-    <p>{{ text_on_page }}</p>
-    </div>
+    <style>
+    .custom-text {
+        font-size: 1.5em;
+    }
+    </style>
+
+<div class="mt-5 pt-5 bg-white custom-shadow rounded">
+    <h2 class="m-2"><strong>{{ content }}</strong></h2>
+    <p class="custom-text">{{ text_on_page }}</p>  <!-- Класс для пользовательских стилей -->
+</div>
 
     {%endblock%}
 
     {% block footer %}
     <footer class="py-4 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Home Python Hub Studio 2023</p>
+            <p class="m-0 text-center text-white">С наступающим вас 2025 годом!!!</p>
         </div>
     </footer>
     {% endblock %}

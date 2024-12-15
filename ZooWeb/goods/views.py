@@ -72,3 +72,10 @@ def product(request, product_slug):
         'product': product
     }
     return render(request, 'goods/product.html', context=context)
+
+def animal (request, product_slug):
+    animal= Products.objects.get(slug=product_slug)
+    context: dict[str, Products] = {
+        'animal': animal
+    }
+    return render(request, 'goods/animal.html', context=context)
