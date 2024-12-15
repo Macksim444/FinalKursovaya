@@ -20,8 +20,8 @@ class TicketCategories(models.Model):
 
     class Meta:
         db_table = 'ticket'
-        verbose_name = 'Билет'
-        verbose_name_plural = 'Билеты'
+        verbose_name = 'Тип билета'
+        verbose_name_plural = 'Типы билетов'
 
     def __str__(self):
         return self.name
